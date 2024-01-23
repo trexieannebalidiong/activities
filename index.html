@@ -1,215 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Food Website Design</title>
 
-    <style>
-        /* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {...}
- Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {...}
- Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {...}
- Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}
- Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {...} */
-        p,
-        h3 {
-            padding: 10px;
-            text-align: center;
-        }
+    <!-- STYLE CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <!-- STYLE CSS LINK -->
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(9, 11vh);
-            gap: 5px;
-        }
+    <!-- BOOTSTRAP CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BOOTSTRAP CDN LINK -->
 
-        .navbar {
-            grid-column: 1/13;
-            grid-row: 1/2;
-        }
 
-        .footer {
-            grid-column: 1/13;
-            grid-row: 9/10;
-        }
 
-        .item1 {
-            text-align: center;
-            color: blueviolet;
-            background-color: rgb(240, 226, 226);
-        }
-        .item2{
-            text-align: center;
-            color: blueviolet;
-            background-color: rgb(240, 226, 226);
-        }
-        .item3 {
-            text-align: center;
-            color: blueviolet;
-            background-color: rgb(240, 226, 226);
-        }
-        .item4 {
-            text-align: center;
-            color: blueviolet;
-            background-color: rgb(240, 226, 226);
-        }
-        .sidebar {
-            background-color: rgb(99, 194, 107);
-            text-align: center;
-        }
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- FONT AWESOME CDN -->
+
+
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS LINK -->
+</head>
+<body>
+    
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-sm" id="navbar">
+  <a href="index.html" class="navbar-brand" id="logo"><img src="./images/logo.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <span><i class="fa-solid fa-bars"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Order</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <form class="d-flex">
+      <input type="text" class="form-control me-2" placeholder="Search" required>
+      <button type="button" id="btn">Search</button>
+    </form>
+
+  </div>
+</nav>
+<!-- Navbar End -->
+
+
+  
+    
+
+<!-- Home Section Start -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h3>Claim Best Offer <br> On Fast <span>Food</span> & <span>Restaurant</span></h3>
+    <p>Hi lovely customers good day were offering 30% discount in first 100 customers come in and enjoy our exclusive discount,enjoy delicious and tasty foods.</p>
+    <a href="#our-menu" id="home-btn">Our Menu</a>
+  </div>
+  <div class="img">
+    <img src="./images/image 46.png" alt="">
+  </div>
+</section>
+<!-- Home Section End -->
+
+
+
+<!-- Top Section Start -->
+<div class="top-section">
+  <h5>WHAT WE SERVE</h5>
+  <h3>Your Favourite Food <br> Delivery Partner</h3>
+  <div class="row">
+
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/img1.png" alt="">
+        <div class="card-body">
+        <h1>Easy To Order</h1>
+        <p>You only need a few steps in <br> ordering food</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/img2.png" alt="">
+        <div class="card-body">
+        <h1>Fastest Delivery</h1>
+        <p>Delivery that is always ontime <br> even faster</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/img3.png" alt="">
+        <div class="card-body">
+        <h1>Best Quality</h1>
+        <p>Not only fast for us quality is also <br> number one</p>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Top Section End -->
+
+
+
+
+<!-- Our Menu Start -->
+<section class="menu" id="menu">
+  <h3>Menu</h3>
+  <h2>Delicious Dishes Is Here <i class="fa-solid fa-arrow-down"></i></h2>
+
+
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/Mangalorean_Chicken.png" alt="">
+        <div class="card-body">
+          <h3>M Chicken</h3>
+          <h6>macarooni with chicken wings.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$20 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/Garlic_Fried.png" alt="">
+        <div class="card-body">
+          <h3>Garlic Fried</h3>
+          <h6>chicken wings with fried garlic.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$30 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/Grilled_beef_steak.png" alt="">
+        <div class="card-body">
+          <h3>G Beef Steak</h3>
+          <h6>tasty beef cook in medium rare.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$120 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/Pineapple_Fried_Rice.png" alt="">
+        <div class="card-body">
+          <h3>Fried Rice</h3>
+          <h6>tasty fried rice with delicious fried shirmp on top.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$200 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/Grilled_pork_ribs.png" alt="">
+        <div class="card-body">
+          <h3>Pork Ribs</h3>
+          <h6>fresh grilled ribs.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$300 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/crispy_fried.png" alt="">
+        <div class="card-body">
+          <h3>Crispy Fried</h3>
+          <h6>fried chicken with cheese and sauce.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$10 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/sushi__japanese.png" alt="">
+        <div class="card-body">
+          <h3>Sushi Japanes</h3>
+          <h6>Yummy and tasty sushi.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$150 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/Lyulya_kebab.png" alt="">
+        <div class="card-body">
+          <h3>Lyulya Kebab</h3>
+          <h6>fried beef,pork with cheese and fried chicken wings.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$250 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- Our Menu End -->
+
+
+
+
+
+<div class="container">
+  <div class="line" style="width: 100%; height: 2px; background-color: #e53937;"></div>
+</div>
+
+
+
+
+
+
+<!-- Our Menu Start -->
+<section class="menu" id="menu">
+  <h3>Our Menu</h3>
+
+
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/burger.png" alt="">
+        <div class="card-body">
+          <h3>Burger</h3>
+          <h6>cheese burger.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$60 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/fasr food.png" alt="">
+        <div class="card-body">
+          <h3>Fast Food</h3>
+          <h6>all in one grilling.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$50 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/rice.png" alt="">
+        <div class="card-body">
+          <h3>Rice Dishe</h3>
+          <h6>rice with  beef adobo.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$120 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/pizza.png" alt="">
+        <div class="card-body">
+          <h3>Pizza</h3>
+          <h6>cheese pizza with ham on the inside.</h6>
+          <div class="rating">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+
+          <p>$30 <i class="fa-solid fa-credit-card"></i></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+  </div>
+</section>
+<!-- Our Menu End -->
+
+
+
+
+
+<!-- Ordre Section Start -->
+<section class="order" id="order">
+  <div class="heading">Ordre Your <span>Food</span></div>
+
+  <div class="row">
+    <div class="col-md-5 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/img1.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-7 py-3 py-md-0">
+      <form action="#">
+
+        <div class="mb-3 mt-3">
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <input type="number" class="form-control" id="number" placeholder="Enter Number" required>
+        </div>
+
+
+         <textarea  class="form-control" id="comment" rows="5" name="text" placeholder="Enter Address" required></textarea>
+
+         <button type="submit" class="order-btn">Order Now</button>
         
 
-        .navbar {
-            background-color: blueviolet;
-        }
-
-        .footer {
-            background-color: rgb(137, 137, 201);
-        }
-
-        .main {
-            background-color: rgb(184, 177, 166);
-            
-        }
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (max-width: 768px) {
-            .item1{
-                grid-column: 1/13;
-                grid: 2/3;
-            }
-            .item2{
-                grid-column: 1/13;
-                grid-row: 3/4;
-            }
-            .item3{
-                grid-column: 1/13;
-                grid-row: 4/5;
-            }
-            .item4{
-                grid-column: 1/13;
-                grid-row: 5/6;
-            }
-            .sidebar{
-                grid-column: 1/13;
-                grid-row: 8/9;
-            }
-            .main{
-                grid-column: 1/13;
-                grid-row: 6/8;
-            }
-        }
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 768px) {
-            .item1 {
-                grid-column: 1/3;
-                grid-row: 2/3;
-            }
-
-            .item2 {
-                grid-column: 1/3;
-                grid-row: 3/4;
-            }
-
-            .item3 {
-                grid-column: 1/3;
-                grid-row: 4/5;
-            }
-
-            .item4 {
-                grid-column: 1/3;
-                grid-row: 5/6;
-            }
-
-            .main {
-                grid-column: 3/13;
-                grid-row: 2/8;
-            }
-
-            .sidebar {
-                grid-column: 1/13;
-                grid-row: 8/9;
-            }
-        }
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-            .item1 {
-                grid-column: 1/3;
-                grid-row: 2/3;
-            }
-
-            .item2 {
-                grid-column: 1/3;
-                grid-row: 3/4;
-            }
-
-            .item3 {
-                grid-column: 1/3;
-                grid-row: 4/5;
-            }
-
-            .item4 {
-                grid-column: 1/3;
-                grid-row: 5/6;
-            }
-
-            .sidebar {
-                grid-column: 11/13;
-                grid-row: 2/9;
-            }
-
-            .main {
-                grid-column: 3/11;
-                grid-row: 2/9;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="navbar">
-            <h3>MY PERSONAL PORTFOLIO</h3>
-        </div>
-        <div class="item1">skills
-            <h4>Cooking</h4>
-        </div>
-                
-          
-        <div class="item2">Education
-            <h6>Hilamonan Elementary School</h6>
-            <h6>Junior/Senior High Scholl in Fortress College</h6>
-        </div>
-        <div class="item3">hobbies
-                <h6> Reading</h6>
-        </div>
-        <div class="item4">Goals/Plans
-            <h6> To be a successful IT Professional.</h6>
-        </div>
-
-        <div class="main">
-            <center> <img src="mmm.jpg" width="150" height="200"></center>
-            <h3>Trexie Anne Balidiong</h3>
-            <p>I'm Trexie Anne Balidiong, 24 years old , I live in Kabankalan City. I graduated my elementary in Hilamonan Elementary School and my Junior/Senior High Scholl in Fortress College.</p>
-        </div>
-
-        <div class="sidebar">
-            Sidebar
-        </div>
-
-        <div class="footer">
-            Footer
-        </div>
+      </form>
     </div>
-</body>
 
+  </div>
+</section>
+<!-- Ordre Section End -->
+
+
+
+
+
+<!-- Review Section Start -->
+<section class="review" id="review">
+  <div class="row">
+
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/review-img.png" alt="">
+      </div>
+    </div>
+
+    <div class="col-md-8 py-3 py-md-0" style="padding: 100px;">
+      <h3>WHAT THEY SAY</h3>
+      <h2>What Our Customers <br>Say About Us</h2>
+      <p>so good in services and the food was delicious!</p>
+      <h5><img src="./images/pic-1.png" alt="" width="60px"><a href="#">Maveclinton</a></h5>
+      <h5><img src="./images/pic-2.png" alt="" width="60px"><a href="#">Jehnny dooper</a></h5>
+      <div class="rating">
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Review Section End -->
+
+
+
+
+
+<!-- Contact Section Start -->
+<section class="contact" id="contact">
+  <div class="heading">
+    Contact <span>us</span>
+  </div>
+  <div class="row">
+    <div class="col-md-5 py-3 py-md-0">
+      <h3>Let's Get In Touch</h3>
+      <p>happy to serve delicious foods!</p>
+      <i class="fa-solid fa-phone"><span>0978654323</span></i><br><br>
+      <i class="fa-solid fa-envelope"><span>balidiongtrixy@Gmail.com</span></i><br><br>
+      <i class="fa-solid fa-location-dot"><span>KABANKALAN CITYS</span></i>
+    </div>
+
+    <div class="col-md-7 py-3 py-md-0">
+      <form action="#">
+        <div class="mb-3 mt-3">
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <input type="number" class="form-control" id="number" placeholder="Enter Number" required>
+        </div>
+
+
+         <textarea  class="form-control" id="comment" rows="5" name="text" placeholder="Enter Address" required></textarea>
+
+         <button type="submit" class="order-btn">Order Now</button>
+      </form>
+    </div>
+  </div>
+
+</section>
+<!-- Contact Section End -->
+
+
+
+
+<!-- Footer Start -->
+<footer id="footer">
+  <div class="f-content">
+    <div class="f-logo"><img src="./images/logo.png" alt=""></div>
+    <p>Happy to served.</p>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+  <br>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BOOTSTRAP CDN LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CDN LINK -->
+
+
+</body>
 </html>
